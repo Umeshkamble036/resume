@@ -540,11 +540,52 @@
     body { background: #fff; color: #111; }
     body::before, body::after { display: none; }
   }
+<style>
+/* ── SITE NAV ── */
+.site-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  background: rgba(10,14,26,0.96); backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(201,168,76,0.12);
+  height: 56px; display: flex; align-items: center;
+  justify-content: space-between; padding: 0 40px;
+}
+.site-nav-logo {
+  font-family: 'DM Mono', monospace; font-size: 12px;
+  color: #c9a84c; letter-spacing: 3px; text-decoration: none;
+}
+.site-nav-links { display: flex; list-style: none; gap: 0; }
+.site-nav-links a {
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  color: #8a9ab5; text-decoration: none; letter-spacing: 2px;
+  text-transform: uppercase; padding: 6px 16px;
+  border: 1px solid transparent; transition: all .2s;
+}
+.site-nav-links a:hover { color: #c9a84c; border-color: rgba(201,168,76,0.15); }
+.site-nav-links a.nav-cta {
+  color: #c9a84c; background: rgba(201,168,76,0.1);
+  border-color: rgba(201,168,76,0.3);
+}
+.site-nav-links a.nav-cta:hover { background: rgba(201,168,76,0.2); }
+@media(max-width:600px){
+  .site-nav { padding: 0 16px; }
+  .site-nav-links a { padding: 6px 10px; font-size: 9px; letter-spacing: 1px; }
+}
 </style>
 </head>
 <body>
 
-<div class="container">
+<!-- SITE NAV -->
+<nav class="site-nav">
+  <a class="site-nav-logo" href="index.html">UK</a>
+  <ul class="site-nav-links">
+    <li><a href="index.html">Resume</a></li>
+    <li><a href="expertise.html">Expertise</a></li>
+    <li><a href="services.html">Mentorship</a></li>
+    <li><a href="connect.html" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container" style="padding-top:56px;">
 
   <!-- HEADER -->
   <header>
