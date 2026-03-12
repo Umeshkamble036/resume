@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Umesh Kamble — AWS Mainframe Modernization, Enterprise Mainframe Engineering & Custom AI Agent Creation"/>
+<title>Expertise — Umesh Kamble</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@400;500&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --gold:#C9A84C;--gold-l:#E8C97A;--navy:#07090F;--card:#0B1220;
+  --blue:#4A90D9;--aws:#FF9900;--green:#4ADE80;
+  --white:#F5F0E8;--muted:#7A8BA8;--border:rgba(201,168,76,0.12);
+}
+html{scroll-behavior:smooth;}
+body{background:var(--navy);color:var(--white);font-family:'Crimson Pro',Georgia,serif;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(201,168,76,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,0.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,9,15,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;}
+.nav-logo{font-family:'DM Mono',monospace;font-size:12px;color:var(--gold);letter-spacing:3px;text-decoration:none;}
+.nav-links{display:flex;gap:0;list-style:none;}
+.nav-links a{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);text-decoration:none;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border:1px solid transparent;transition:all .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);border-color:var(--border);}
+.nav-cta{padding:8px 20px!important;background:rgba(201,168,76,0.1)!important;border-color:rgba(201,168,76,0.3)!important;color:var(--gold)!important;}
+.nav-cta:hover{background:rgba(201,168,76,0.2)!important;}
+
+/* HERO */
+.hero{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;padding:100px 60px 80px;max-width:1200px;margin:0 auto;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.2);padding:6px 16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:36px;}
+.pulse{width:6px;height:6px;background:var(--green);border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.5);}}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(44px,6vw,80px);font-weight:900;line-height:1;letter-spacing:-2px;margin-bottom:24px;}
+.hero h1 .g{color:var(--gold-l);display:block;}
+.hero-sub{font-size:20px;color:rgba(245,240,232,.65);line-height:1.65;font-weight:300;font-style:italic;max-width:560px;margin-bottom:48px;}
+.btns{display:flex;gap:16px;flex-wrap:wrap;}
+.btn-p{padding:14px 32px;background:var(--gold);color:var(--navy);font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:500;transition:all .2s;}
+.btn-p:hover{background:var(--gold-l);transform:translateY(-2px);}
+.btn-o{padding:14px 32px;background:transparent;color:var(--gold);border:1px solid rgba(201,168,76,0.4);font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all .2s;}
+.btn-o:hover{background:rgba(201,168,76,0.08);border-color:var(--gold);}
+
+/* SECTION */
+.sec{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:80px 60px;}
+.eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:12px;}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:700;line-height:1.1;margin-bottom:16px;}
+.sec-desc{font-size:18px;color:var(--muted);font-weight:300;font-style:italic;max-width:580px;line-height:1.6;margin-bottom:56px;}
+.hr{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.25),transparent);}
+
+/* PILLARS */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:80px;}
+@media(max-width:768px){.pillars{grid-template-columns:1fr;}.hero{padding:100px 24px 60px;}.sec{padding:60px 24px;}nav{padding:0 20px;}.nav-links{gap:0;}}
+.pillar{background:var(--card);border:1px solid var(--border);padding:48px 36px;position:relative;overflow:hidden;transition:border-color .3s;}
+.pillar::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;opacity:0;transition:opacity .3s;}
+.pillar.aws::after{background:var(--aws);}
+.pillar.mf::after{background:var(--blue);}
+.pillar.ag::after{background:var(--gold);}
+.pillar:hover{border-color:rgba(201,168,76,.3);}
+.pillar:hover::after{opacity:1;}
+.p-num{font-family:'Playfair Display',serif;font-size:72px;font-weight:900;line-height:1;opacity:.07;position:absolute;top:20px;right:20px;}
+.pillar.aws .p-num{color:var(--aws);}
+.pillar.mf .p-num{color:var(--blue);}
+.pillar.ag .p-num{color:var(--gold);}
+.p-icon{font-size:36px;margin-bottom:20px;display:block;}
+.p-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;}
+.pillar.aws .p-label{color:var(--aws);}
+.pillar.mf .p-label{color:var(--blue);}
+.pillar.ag .p-label{color:var(--gold);}
+.p-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--white);margin-bottom:16px;line-height:1.2;}
+.p-desc{font-size:16px;color:var(--muted);line-height:1.65;font-weight:300;}
+
+/* AWS CARDS */
+.aws-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:40px;}
+@media(max-width:768px){.aws-grid{grid-template-columns:1fr;}}
+.aws-card{background:var(--card);border:1px solid rgba(255,153,0,.1);border-left:3px solid var(--aws);padding:28px;transition:all .2s;}
+.aws-card:hover{border-color:rgba(255,153,0,.3);transform:translateX(4px);}
+.aws-card-title{font-family:'DM Mono',monospace;font-size:12px;color:var(--aws);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;}
+.aws-card-desc{font-size:15px;color:var(--muted);line-height:1.6;font-weight:300;}
+
+/* JOURNEY */
+.journey{display:flex;flex-direction:column;position:relative;margin-bottom:48px;}
+.journey::before{content:'';position:absolute;left:28px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--blue),transparent);}
+.j-step{display:flex;gap:32px;align-items:flex-start;padding:0 0 40px;}
+.j-num{width:56px;height:56px;flex-shrink:0;background:var(--card);border:1px solid rgba(74,144,217,.3);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--blue);position:relative;z-index:1;}
+.j-title{font-family:'Playfair Display',serif;font-size:20px;color:var(--white);margin-bottom:6px;}
+.j-desc{font-size:15px;color:var(--muted);line-height:1.6;font-weight:300;}
+.j-tag{display:inline-block;margin-top:8px;padding:3px 10px;background:rgba(74,144,217,.1);border:1px solid rgba(74,144,217,.2);font-family:'DM Mono',monospace;font-size:10px;color:var(--blue);letter-spacing:1px;}
+
+/* AGENT DIAGRAM */
+.agent-box{background:var(--card);border:1px solid rgba(201,168,76,.15);padding:48px;margin-bottom:40px;position:relative;overflow:hidden;}
+.agent-box::before{content:'SYSTEM ARCHITECTURE';position:absolute;top:20px;right:20px;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:3px;color:rgba(201,168,76,.15);}
+.router{text-align:center;margin-bottom:40px;}
+.router-inner{display:inline-block;background:rgba(201,168,76,.1);border:2px solid var(--gold);padding:16px 40px;font-family:'DM Mono',monospace;font-size:13px;color:var(--gold-l);letter-spacing:2px;position:relative;}
+.router-inner::after{content:'';position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);width:1px;height:20px;background:rgba(201,168,76,.4);}
+.agents-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.ag-node{background:rgba(15,30,61,.8);border:1px solid rgba(201,168,76,.2);padding:12px 18px;font-family:'DM Mono',monospace;font-size:11px;color:var(--gold-l);letter-spacing:1px;text-align:center;min-width:100px;transition:all .2s;cursor:default;}
+.ag-node:hover{background:rgba(201,168,76,.08);border-color:var(--gold);transform:translateY(-2px);}
+.ag-label{display:block;font-size:9px;color:var(--muted);margin-top:4px;letter-spacing:1px;}
+
+/* RESULTS */
+.results{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;}
+@media(max-width:768px){.results{grid-template-columns:repeat(2,1fr);}}
+.res-card{background:var(--card);border:1px solid rgba(74,222,128,.15);padding:24px;text-align:center;}
+.res-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:var(--green);line-height:1;margin-bottom:8px;}
+.res-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
+
+/* SKILLS */
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:48px;}
+.skill{padding:8px 16px;border:1px solid rgba(201,168,76,.2);background:rgba(201,168,76,.04);font-family:'DM Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:1px;transition:all .2s;}
+.skill:hover{background:rgba(201,168,76,.1);border-color:var(--gold);}
+
+/* CTA */
+.cta{position:relative;z-index:1;background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:80px 60px;text-align:center;}
+.cta-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);font-weight:700;margin-bottom:16px;}
+.cta-title span{color:var(--gold-l);font-style:italic;}
+.cta-desc{font-size:18px;color:var(--muted);margin-bottom:40px;font-style:italic;font-weight:300;}
+.cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+/* FOOTER */
+footer{position:relative;z-index:1;padding:28px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(201,168,76,.08);}
+.f-name{font-family:'DM Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:2px;}
+.f-links{display:flex;gap:24px;}
+.f-links a{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);text-decoration:none;letter-spacing:1px;transition:color .2s;}
+.f-links a:hover{color:var(--gold);}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">UK</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Resume</a></li>
+    <li><a href="expertise.html">Expertise</a></li>
+    <li><a href="services.html">Mentorship</a></li>
+    <li><a href="connect.html" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div>
+    <div class="hero-badge"><span class="pulse"></span>Available for Hiring &amp; Consultation</div>
+    <h1>Building the Bridge<span class="g">Between Legacy &amp; Future</span></h1>
+    <p class="hero-sub">8 years inside mainframe systems. 30+ production AI agents. AWS modernization thinking. Here is everything I have learned — and what I can build for you.</p>
+    <div class="btns">
+      <a href="#agents" class="btn-p">Explore My Agent System</a>
+      <a href="services.html" class="btn-o">Mentorship &amp; Courses</a>
+    </div>
+  </div>
+</div>
+
+<div class="hr"></div>
+
+<!-- PILLARS -->
+<div class="sec">
+  <p class="eyebrow">Three Areas of Deep Expertise</p>
+  <h2 class="sec-title">What I Know. What I Build.</h2>
+  <p class="sec-desc">Not theory — production-tested knowledge from 8 years on real enterprise systems.</p>
+  <div class="pillars">
+    <div class="pillar aws"><span class="p-num">01</span><span class="p-icon">☁️</span><div class="p-label">AWS</div><div class="p-title">AWS Mainframe Modernization</div><div class="p-desc">Blu Age, AWS Transform, 8R Framework, replatforming and refactoring. Hands-on apps on EC2 with real COBOL workloads.</div></div>
+    <div class="pillar mf"><span class="p-num">02</span><span class="p-icon">🖥️</span><div class="p-label">Mainframe</div><div class="p-title">Enterprise Mainframe Engineering</div><div class="p-desc">COBOL, JCL, DB2, IMS, VSAM, CICS, Assembler, PL/I. 8 years on AT&amp;T and American Express mission-critical systems.</div></div>
+    <div class="pillar ag"><span class="p-num">03</span><span class="p-icon">🤖</span><div class="p-label">AI Agents</div><div class="p-title">Custom AI Agent Creation</div><div class="p-desc">30+ specialist agents using Claude, LangChain and Python. Router orchestration, self-verification loops, 80–90% automation.</div></div>
+  </div>
+</div>
+
+<div class="hr"></div>
+
+<!-- AWS -->
+<div class="sec" id="aws">
+  <p class="eyebrow">Cloud Modernization</p>
+  <h2 class="sec-title">AWS Mainframe<br/>Modernization</h2>
+  <p class="sec-desc">Deep hands-on knowledge of the full AWS modernization stack — real test applications and architectural thinking.</p>
+  <div class="aws-grid">
+    <div class="aws-card"><div class="aws-card-title">AWS Blu Age</div><div class="aws-card-desc">Automated COBOL to Java refactoring. Understanding how the runtime preserves business logic and handles complex PIC clauses and COPYBOOK dependencies.</div></div>
+    <div class="aws-card"><div class="aws-card-title">AWS Mainframe Modernization Service</div><div class="aws-card-desc">Managed runtime environments for replatformed and refactored applications. End-to-end migration pipeline from mainframe batch to cloud-native.</div></div>
+    <div class="aws-card"><div class="aws-card-title">AWS Transform</div><div class="aws-card-desc">AI-accelerated code conversion pipeline. Understanding where Transform excels and where manual intervention is needed — from a practitioner's honest view.</div></div>
+    <div class="aws-card"><div class="aws-card-title">8R Modernization Framework</div><div class="aws-card-desc">Applied the right strategy per system: Rehost, Replatform, Refactor, Rearchitect, Rebuild, Replace, Retire, Retain — based on business criticality.</div></div>
+    <div class="aws-card"><div class="aws-card-title">GitHub Projects</div><div class="aws-card-desc">AWS_Mainframe_Modernization_test_App (Java + EC2 + COBOL) and mainframe-to-java-aws — live, open-source modernization code.</div></div>
+    <div class="aws-card"><div class="aws-card-title">Translate-Verify-Learn Framework</div><div class="aws-card-desc">My original idea: run legacy and modernized code in parallel, compare outputs automatically, feed mismatches back to improve translation accuracy.</div></div>
+  </div>
+  <div class="skills">
+    <span class="skill">AWS Blu Age</span><span class="skill">AWS Transform</span><span class="skill">AWS EC2</span><span class="skill">8R Framework</span><span class="skill">COBOL → Java</span><span class="skill">Replatforming</span><span class="skill">Refactoring</span><span class="skill">Spring Boot</span><span class="skill">Java</span><span class="skill">Spring JPA</span>
+  </div>
+</div>
+
+<div class="hr"></div>
+
+<!-- MODERNIZATION JOURNEY -->
+<div class="sec" id="modernization">
+  <p class="eyebrow">Legacy to Cloud</p>
+  <h2 class="sec-title">Mainframe<br/>Modernization Journey</h2>
+  <p class="sec-desc">The process I follow to safely move enterprise mainframe systems to modern infrastructure — step by step, zero surprises.</p>
+  <div class="journey">
+    <div class="j-step"><div class="j-num">01</div><div><div class="j-title">Static Analysis &amp; System Mapping</div><div class="j-desc">Map the full legacy system — call graphs, dependencies, copybook usage, data flows, batch schedules, JCL chains. Understand before you touch anything.</div><span class="j-tag">COBOL · JCL · ADDI · Batch Analysis</span></div></div>
+    <div class="j-step"><div class="j-num">02</div><div><div class="j-title">Right Strategy Selection (8R)</div><div class="j-desc">Not everything needs full refactoring. Apply the right R per module — Rehost for simple lifts, Replatform for managed runtime, Refactor for cloud-native.</div><span class="j-tag">AWS 8R Framework · Risk Assessment</span></div></div>
+    <div class="j-step"><div class="j-num">03</div><div><div class="j-title">AI-Assisted Code Conversion</div><div class="j-desc">Use AWS Blu Age or custom AI agents to convert COBOL to Java module by module. Never batch-convert — decompose, convert, verify one piece at a time.</div><span class="j-tag">AWS Blu Age · AWS Transform · Claude AI</span></div></div>
+    <div class="j-step"><div class="j-num">04</div><div><div class="j-title">Parallel Run &amp; Equivalence Verification</div><div class="j-desc">Run legacy and modernized systems in parallel on identical inputs. Automatically compare every output, side effect and data mutation before cutover.</div><span class="j-tag">Translate-Verify-Learn · Shadow Testing</span></div></div>
+    <div class="j-step"><div class="j-num">05</div><div><div class="j-title">Cutover &amp; Continuous Improvement</div><div class="j-desc">Controlled phased cutover with rollback capability. Post-migration monitoring, performance benchmarking, and continuous optimisation.</div><span class="j-tag">AWS CloudWatch · CI/CD · DevOps</span></div></div>
+  </div>
+  <div class="skills">
+    <span class="skill">COBOL</span><span class="skill">JCL</span><span class="skill">DB2</span><span class="skill">IMS</span><span class="skill">VSAM</span><span class="skill">CICS</span><span class="skill">Assembler</span><span class="skill">PL/I</span><span class="skill">z/OS</span><span class="skill">Batch Processing</span><span class="skill">Legacy Migration</span>
+  </div>
+</div>
+
+<div class="hr"></div>
+
+<!-- AI AGENTS -->
+<div class="sec" id="agents">
+  <p class="eyebrow">Custom AI Agents</p>
+  <h2 class="sec-title">The Agent System<br/>I Built</h2>
+  <p class="sec-desc">30+ production AI agents running on real mainframe workloads — deployed at AT&amp;T, measured, and continuously improved.</p>
+  <div class="agent-box">
+    <div class="router"><div class="router-inner">⚙️ ROUTER AGENT — Orchestration Layer</div></div>
+    <div class="agents-row">
+      <div class="ag-node">COBOL<span class="ag-label">Parser · Analyzer</span></div>
+      <div class="ag-node">JCL<span class="ag-label">Job Streams</span></div>
+      <div class="ag-node">DB2<span class="ag-label">SQL · Stored Procs</span></div>
+      <div class="ag-node">IMS<span class="ag-label">Hierarchical DB</span></div>
+      <div class="ag-node">Assembler<span class="ag-label">Low Level</span></div>
+      <div class="ag-node">PL/I<span class="ag-label">Procedural</span></div>
+      <div class="ag-node">CICS<span class="ag-label">Transaction</span></div>
+      <div class="ag-node">VSAM<span class="ag-label">File Systems</span></div>
+      <div class="ag-node">AWS<span class="ag-label">Cloud Migration</span></div>
+      <div class="ag-node">SME<span class="ag-label">Domain Expert</span></div>
+      <div class="ag-node">COPYBOOK<span class="ag-label">Data Structures</span></div>
+      <div class="ag-node">+20 more<span class="ag-label">Specialists</span></div>
+    </div>
+  </div>
+  <div class="results">
+    <div class="res-card"><div class="res-num">30+</div><div class="res-label">Specialist Agents</div></div>
+    <div class="res-card"><div class="res-num">80–90%</div><div class="res-label">Automation Accuracy</div></div>
+    <div class="res-card"><div class="res-num">40%</div><div class="res-label">Effort Reduced</div></div>
+    <div class="res-card"><div class="res-num">25%</div><div class="res-label">CPU Time Saved</div></div>
+  </div>
+  <div style="margin-top:40px;">
+    <div class="skills">
+      <span class="skill">Claude AI</span><span class="skill">LangChain</span><span class="skill">Python</span><span class="skill">Multi-Agent Systems</span><span class="skill">Router Agent</span><span class="skill">RAG</span><span class="skill">Prompt Engineering</span><span class="skill">Agentic AI</span><span class="skill">GenAI</span>
+    </div>
+  </div>
+</div>
+
+<div class="hr"></div>
+
+<div class="cta">
+  <h2 class="cta-title">Ready to <span>Modernize</span><br/>or Build Together?</h2>
+  <p class="cta-desc">Mainframe modernization strategy, custom AI agents, or mentorship — I am here.</p>
+  <div class="cta-row">
+    <a href="connect.html" class="btn-p">✉ Get In Touch</a>
+    <a href="services.html" class="btn-o">View Mentorship Plans</a>
+    <a href="https://www.linkedin.com/in/umesh-kamble-a21704134/" target="_blank" class="btn-o">LinkedIn</a>
+  </div>
+</div>
+
+<footer>
+  <span class="f-name">UMESH KAMBLE · PUNE, INDIA</span>
+  <div class="f-links">
+    <a href="https://github.com/Umeshkamble036" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/umesh-kamble-a21704134/" target="_blank">LinkedIn</a>
+    <a href="index.html">Portfolio</a>
+    <a href="connect.html">Contact</a>
+  </div>
+</footer>
+<script src="_shared.js"></script>
+</body>
+</html>
